@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.container {
+    width: 50vw;
+    margin-left: 50vw;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.biosection {
+    width: 50vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to top right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100%;
+    padding: 20px;
+    gap: 1.5rem;
+    row-gap: 3rem;
+}
+
+.headerclass { 
+    display: flex; 
+    align-items: center; 
+    gap: 15rem; 
+    padding: 10px 0px;
+    margin: 20px;
+} 
+    
+.header-logo {
+    width: 60px; 
+    height: 60px; 
+}
+
+.headerclass2{
+    display: flex;
+    align-items: center;
+}
+
+.download-resume { 
+    background-color: #13acdb; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px;
+} 
+
+.download-resume:hover { 
+    background-color: rgb(9, 84, 136); 
+}
+
+
+.image {
+    text-align: center;
+}
+
+.pfimage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 4px solid rgb(75, 182, 209);
+}
+
+.pfimage:hover {
+    border: 4px solid rgb(9, 84, 136);
+}
+
+.biocontent h1 {
+    margin: 0;
+    color: black;
+}
+
+.biocontent p {
+    margin: 5px 0;
+    color: black;
+}
+
+.biocontent a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.biocontent a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    width: 100%;
+    padding-bottom: 30px;
+    margin: 10px;
+}
+
+.social ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    list-style-type: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.social li {
+    margin: 0;
+}
+
+.social a {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 2px;
+    height: 90px;
+    width: 90px;
+    background-color: #13acdb;
+    border-radius: 50%;
+    color: black;
+    font-size: 0.9em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .social a {
+        padding: 8px;
+        height: 70px;
+        width: 70px;
+        font-size: 0.8em;
+    }
+}
+
+
+.social a:hover {
+    background-color: rgb(9, 84, 136);
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .biosection {
+        width: 100vw;
+        height: auto;
+    }
+    
+
+    .headerclass { 
+        align-items: center; 
+        gap: 8rem; 
+        padding: 10px 0px;
+        margin: 12px;
+    } 
+
+    .bio {
+        padding: 10px;
+    }
+
+    .pfimage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social ul {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .social a {
+        padding: 8px;
+    }
+}
+
+
+.About-Me p {
+    font-family: cursive;
+    margin-top: 1rem;
+    font-size: 15px;
+    text-align: left;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    animation: slideFromLeft 1.7s ease forwards;
+    opacity: 0;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card:hover {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.cardimage {
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.arrow {
+    font-size: 20px;
+    color: #555;
+}
+
+.card-content {
+    flex: 1;
+    text-align: left;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.card-content h3 {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.card-content p {
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.card-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card-content ul li {
+    margin-bottom: 5px;
+}
+
+.College-logo{
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
+    justify-content: space-evenly;
+ } 
+ 
+ .College{
+     width: 60px; 
+     height: 60px; 
+ }
+
+.project {
+    text-align: left;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.College-logo:hover, .project:hover{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill:hover {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(75, 182, 209);
+}
+
+.skill1 { grid-column: span 1; }
+.skill2 { grid-column: span 1; }
+.skill3 { grid-column: span 1; }
+.skill4 { grid-column: span 1; }
+.skill5 { grid-column: span 1; }
+.skill6 { grid-column: span 1; }
+.skill7 { grid-column: span 1; }
+.skill8 { grid-column: span 1; }
+.skill9 { grid-column: span 1; }
+.skill10 { grid-column: span 1; }
+.skill11 { grid-column: span 1; }
+.skill12 { grid-column: span 1; }
+.skill13 { grid-column: span 1; }
+.skill14 { grid-column: span 1; }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.About-Me {
+    text-align: center;
+    animation: slideFromLeft 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .biosection {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        row-gap: 1rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .headerclass { 
+        align-items: center; 
+        gap: 8rem; 
+        padding: 10px 0px;
+        margin: 20px;
+    } 
+
+    .container {
+        width: 100vw;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pfimage {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle a {
+        height: 70px;
+        width: 70px;
+        padding: 20px;
+    }
+
+    .job, .project, .skill {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .pfimage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bio {
+        gap: 1.5rem;
+    }
+
+    .circle a {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+    }
+
+    form label {
+        width: 90%;
+    }
+}
